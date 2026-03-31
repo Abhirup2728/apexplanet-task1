@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhirup Gumtya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      background-color: #2c3e50;
+      padding: 14px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .brand {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav ul a:hover {
+      color: #fff;
+    }
+
+    /* ---- HEADER ---- */
+    .header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 60px 30px 50px;
+      text-align: center;
+    }
+
+    .header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ccc;
+      margin-bottom: 18px;
+    }
+
+    .header h1 {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      font-size: 15px;
+      color: #b2bec3;
+      max-width: 500px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .header-btn {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 11px 28px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: 'Nunito', sans-serif;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .header-btn:hover {
+      background-color: #219150;
+    }
+
+    /* ---- SECTION WRAPPER ---- */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 50px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    section h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    section h2 span {
+      color: #27ae60;
+    }
+
+    /* ---- ABOUT ---- */
+    .about-box {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      line-height: 1.8;
+      font-size: 15px;
+      color: #555;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .about-box strong {
+      color: #2c3e50;
+    }
+
+    /* ---- SKILLS ---- */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      background: #ecf0f1;
+      color: #2c3e50;
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* ---- EXPERIENCE ---- */
+    .exp-item {
+      background: white;
+      padding: 20px 25px;
+      border-left: 4px solid #27ae60;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .exp-item h4 {
+      font-size: 16px;
+      color: #2c3e50;
+      margin-bottom: 4px;
+    }
+
+    .exp-item .company {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .exp-item p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* ---- CONTACT LINKS ---- */
+    .contact-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .contact-links a:hover {
+      background: #1a252f;
+    }
+
+    .contact-links a.green {
+      background: #27ae60;
+    }
+
+    .contact-links a.green:hover {
+      background: #1e8449;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: #2c3e50;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    footer span {
+      color: #27ae60;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="brand">Abhirup Gumtya</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero -->
+  <div class="header">
+    <!--
+      IMPORTANT: Save your photo as "photo.jpg" in the same folder as this file.
+      The professional black & white photo works great.
+    -->
+    <img src="photo.jpg" alt="Abhirup Gumtya" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=AG'">
+    <h1>Abhirup Gumtya</h1>
+    <p>
+      Final Year B.Tech CSE (AI &amp; ML) Student at Brainware University, Kolkata.
+      Interested in Data Science, Machine Learning, and Full Stack Development.
+    </p>
+    <button class="header-btn" onclick="greetMe()">Say Hello 👋</button>
+  </div>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About <span>Me</span></h2>
+      <div class="about-box">
+        <p>
+          Hi! I'm <strong>Abhirup Gumtya</strong>, a final year B.Tech Computer Science &amp; Engineering
+          (AI &amp; ML) student at Brainware University, Kolkata with a CGPA of <strong>9.01</strong>.
+        </p>
+        <br>
+        <p>
+          I have completed <strong>4 internships</strong> in areas like AI/ML Engineering, Data Science,
+          and Full Stack Java Development at companies including CESC (Calcutta Electric Supply Corporation),
+          Ardent Computech, Codveda Technologies, and Sanpra Consultancy Services.
+        </p>
+        <br>
+        <p>
+          I hold <strong>25+ certifications</strong> from Oracle, Microsoft, Google, IBM, ISRO, Anthropic,
+          Deloitte, and TCS. Currently doing a Web Development internship at ApexPlanet Software Pvt. Ltd.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>My <span>Skills</span></h2>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">NLP</span>
+        <span class="skill-tag">Deep Learning</span>
+        <span class="skill-tag">Scikit-learn</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Spring Boot</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React.js</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Git &amp; GitHub</span>
+        <span class="skill-tag">Generative AI</span>
+        <span class="skill-tag">Prompt Engineering</span>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Work <span>Experience</span></h2>
+
+      <div class="exp-item">
+        <h4>AI/ML Engineer Intern</h4>
+        <div class="company">CESC – Calcutta Electric Supply Corporation | Nov 2025 – Jan 2026</div>
+        <p>
+          Built an AI-based Electricity Load Demand Forecasting System using Random Forest regression.
+          Also developed an Employee Feedback Analysis System using Python, Pandas, Scikit-learn, and Gradio
+          with interactive Plotly dashboards. Reduced manual feedback review effort by ~60%.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h4>Full Stack Java Developer Intern</h4>
+        <div class="company">Ardent Computech Pvt. Ltd., Kolkata | Aug 2025 – Nov 2025</div>
+        <p>
+          Developed a Gym &amp; Fitness Management web application using Spring Boot and Hibernate.
+          Designed RESTful APIs, handled MySQL database, and followed Agile development practices.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h4>Data Science Intern</h4>
+        <div class="company">Codveda Technologies | May 2025 – Aug 2025</div>
+        <p>
+          Analyzed company sales data using Python (Pandas, Matplotlib). Built KPI dashboards and
+          automated ETL pipelines, reducing reporting time by ~40%.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <h4>Data Science Intern</h4>
+        <div class="company">Sanpra Consultancy Services | Feb 2025 – Apr 2025</div>
+        <p>
+          Built a customer segmentation model using K-Means clustering to support targeted marketing strategies.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Get In <span>Touch</span></h2>
+      <p style="font-size:15px; color:#555; margin-bottom:18px;">
+        Feel free to connect with me on LinkedIn or check out my work on GitHub!
+      </p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/abhirupgumtya" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/Abhirup2728" target="_blank">🐙 GitHub</a>
+        <a href="https://abhirup-gumtya-portfolio.netlify.app" target="_blank" class="green">🌐 Portfolio</a>
+        <a href="mailto:abhirup2728.official@gmail.com" class="green">📧 Email</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made by <span>Abhirup Gumtya</span> &nbsp;|&nbsp; ApexPlanet Web Dev Internship – Task 1</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function greetMe() {
+      alert("Hello! I'm Abhirup Gumtya.\nThanks for visiting my webpage! 😊");
+    }
+  </script>
+
+</body>
+</html>
